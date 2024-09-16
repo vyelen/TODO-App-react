@@ -9,7 +9,10 @@ const App = () => {
         "Eat lunch",
         "Do homework"
     ];
-    const [tasks, setTasks] = useState(initialTask);
+    const [tasks, setTasks] = useState(
+        initialTask
+        // []
+    );
 
     const ref = useRef(null);
 
