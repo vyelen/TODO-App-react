@@ -4,7 +4,7 @@
   <summary>How To Run</summary>
   <ul>
     <li>Clone this repo to your machine</li>
-    <li>Go to the folder where you clone it</li>
+    <li>Go to the folder where you clone this repo</li>
     <li>Run <code>npm i</code> in the current folder</li>
     <li>After that, run <code>npm start</code></li>
     <li>Go to <code>localhost:3000</code> in your browser (usually)</li>
