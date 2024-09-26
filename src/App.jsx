@@ -1,27 +1,30 @@
 import "./App.css";
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 
 const App = () => {
-    const initialTask = [
+
+    // development only
+    const exampleTask = [
         "Take a bath",
         "Breakfast",
         "Go to school",
         "Eat lunch",
         "Do homework"
     ];
+
     const [tasks, setTasks] = useState(
-        initialTask
+        exampleTask
         // []
     );
 
-    const ref = useRef(null);
+    const input = useRef(null);
 
     const newTask = () => {
-        const task = ref.current.value;
+        const task = input.current.value;
 
         if (task !== "") {
             setTasks([...tasks, task]);
-            ref.current.value = "";
+            input.current.value = "";
         }
     };
 
@@ -30,22 +33,19 @@ const App = () => {
         setTasks(updatedTask);
     };
 
-    useEffect(() => {
-        console.log("Screen width is " + window.screen.availWidth);
-    }, []);
-
     return (
         <>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" /> { /* responsive website */ }
+
             <div className="header">
                 <h1>Todo App</h1>
                 <p>v0.1.2024_9_15-beta React.js ver</p>
             </div>
-
             
             <div className="newTaskDiv">
                 <input
-                    ref={ref}
+                    ref={input}
                     id="taskNameInput"
                     type="text"
                     placeholder="Type something here..."/>

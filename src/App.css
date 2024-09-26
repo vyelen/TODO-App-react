@@ -7,6 +7,7 @@
 button {
     border: none;
     color: #282c34;
+    width: 10%;
 }
 
 body {
@@ -40,7 +41,7 @@ body {
 
 #newTaskBtn {
     background-color: hsl(207,81.6%,65.9%);
-    width: 10%;
+    width: 0px;
     height: 30px;
     border-radius: 5px;
 }
@@ -83,14 +84,34 @@ body {
     text-decoration: none;
 }
 
-/* sync to mobile screen */ 
+/* mobile */
 @media screen and (min-width: 320px) {
     #taskNameInput {
         width: 60%;
         font-size: 15px;
     }
 
-    #newTaskBtm {
+    #newTaskBtn {
         width: 20%;
+    }
+
+    #deleteBtn {
+        width: 20%;
+    }
+}/**/
+
+/* tablet, laptop */
+@media screen and (min-width: 768px) {
+    #taskNameInput {
+        width: 60%;
+        font-size: 15px;
+    }
+
+    #newTaskBtn {
+        width: 10%;
+    }
+
+    #deleteBtn {
+        width: 10%;
     }
 }
