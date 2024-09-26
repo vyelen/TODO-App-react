@@ -1,4 +1,4 @@
-<h1>To Do App</h1>
+<h1>To do list App</h1>
 <p>note all your activity here ! (minimize the chance you forget your task) </p>
 
 <details>
